@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    background-image: url(img/ToDoList_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    background-color: aliceblue;
+    min-height  : 85vh;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.task-area{
+    border: 1px solid lightgray;
+}
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.task-tabs div{
+    padding: 1em;
+}
+#under-line{
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 70px;
+    left: 0px;
+    top: 52px;
+    padding: 0px;
+}
+.task{
+    display: flex;
+    justify-content:space-between ;
+    padding: 1em;
+}
