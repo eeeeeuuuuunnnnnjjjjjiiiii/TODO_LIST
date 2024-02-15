@@ -170,7 +170,7 @@ body {
   
   .task-done {
     text-decoration: line-through;
-    background-color: lightgray;
+    background-color: #ADBC9F;
     transition: 0.5s;
   }
   @media (min-width: 1200px){
