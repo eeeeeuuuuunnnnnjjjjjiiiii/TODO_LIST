@@ -12,23 +12,28 @@
 }
 body {
     margin: 0;
-    background-image: url("img/ToDoList_background.jpg");
+    background-image: url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=1380&t=st=1708010123~exp=1708010723~hmac=5a1871ab326cc6e9c48d25d17a575a4deea0a71653fe6c742884f0c39eea1c9e);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Her-Gilwonok';
   }
   
   .container {
-    background-color:white;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    max-width: 800px;
-    border-top: 10px solid #12372A;
-    border-bottom: 10px solid #12372A;
-    height: 100%;
-    min-height: 100vh;
-  }
+    background-color: rgba(255, 255, 255, 0.8);
+       box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+       border-top: 30px solid #12372A;
+       border-bottom: 30px solid #12372A;
+       min-height: 75vh;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+  
+
   .title{
     font-family: 'SUITE-Regular';
+    
   }
   .input-area {
     position: relative;
@@ -38,11 +43,16 @@ body {
     width: 80%;
     height: 65px;
     border: none;
-    border: 1px solid #ADBC9F;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .task-input:hover{
+    transform: scale(1);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
   }
   .task-input:focus {
     outline: none;
-    border-bottom: 3px solid #12372A;
+    border-bottom: 2px solid #12372A;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -58,8 +68,8 @@ body {
     font-size: 14px;
     top: 6px;
     left: 10px;
-    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    -webkit-transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+    transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
   }
   
   .task-input:focus + label > span {
@@ -75,7 +85,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   }
   .button-add:hover {
-    background-color: cadetblue;
+    background-color: #12372A;
+    transition: 0.5s;
+    color:white;
+    transform: scale(1);
   }
   .button-add:active {
     background-color: #f3f4f6;
@@ -85,7 +98,6 @@ body {
   }
   
   .task-list-container {
-    border: 1px solid #ADBC9F;
     margin-top: 1em;
     position: relative;
   }
@@ -119,6 +131,7 @@ body {
   }
   .task span {
     padding: 1em;
+    width: 100%;
   }
   .button-box {
     display: flex;
@@ -160,3 +173,36 @@ body {
     background-color: lightgray;
     transition: 0.5s;
   }
+  @media (min-width: 1200px){
+    h1 {
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-image: none;
+    }
+    .button-add {
+        height: 65px;
+        width: 50px;
+        border: none;
+        background-color: #ADBC9F;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      }
+      .button-add:hover {
+        background-color: #12372A;
+        transition: 0.5s;
+        color:white;
+        transform: scale(1);
+      }
+      .button-add:active {
+        background-color: #f3f4f6;
+        box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+          0px 1px 1px rgba(81, 41, 10, 0.15);
+        transform: translateY(0.125rem);
+      }
+    
+    }
+ 
+   
